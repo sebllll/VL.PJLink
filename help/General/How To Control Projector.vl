@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GDTsBmXXPT0MRz6hP0j1Qm" LanguageVersion="2019.1.0-0917-gf8ecea031f" Version="0.128">
+  <NugetDependency Id="RxcujbNLbhEPEZLWZzicKQ" Location="VL.CoreLib" Version="2019.1.0-917" />
+  <Patch Id="I1jejykHNjZMoI0oLbGLO2">
+    <Canvas Id="CpfUhgxuWUzMYKFT9PuFvu" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="IHznqI5Y8zsMuc4qIePkwM">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="InPzrEwTjOrNg5I8asUNar">
+        <Canvas Id="LgW2CUIPrS8MjLlsqvoIVQ" CanvasType="Group">
+          <Node Bounds="508,487,85,19" Id="VZocPkZLjymM26ulyCdwBS">
+            <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="PJLink" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessNode" Name="Power" />
+            </p:NodeReference>
+            <Pin Id="F2SwcNcs0C5LSbEPH3eD0P" Name="PJLinkConnection" Kind="InputPin" />
+            <Pin Id="O1g8bnfBVhzONKbQN4EmSX" Name="Cmd" Kind="InputPin" />
+            <Pin Id="F2UtCN7HNqKNmilde3PFkk" Name="RunCommand" Kind="InputPin" />
+            <Pin Id="AVP026X8ghBPzoqOV3gdUD" Name="Status" Kind="OutputPin" />
+          </Node>
+          <Pad Id="NxsZWFZut2CO06cWsDEWGP" Comment="Status" Bounds="510,558,77,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EimBzeV2KlPPyaeSvHEMpN" Comment="Cmd" Bounds="550,428,59,15" ShowValueBox="true" isIOBox="true" Value="QUERY">
+            <p:TypeAnnotation LastCategoryFullName="PJLink.PowerCommand" LastSymbolSource="PJLink.dll">
+              <Choice Kind="TypeFlag" Name="Power" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="185,487,145,19" Id="RwEXQnwxAhsM4micRP2t5Q">
+            <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ProjectorInfo" />
+            </p:NodeReference>
+            <Pin Id="O6XOP3TeVszLdwEgTiH1nm" Name="PJLinkConnection" Kind="InputPin" />
+            <Pin Id="Otm4by8ee3uQTVc5hFuDyw" Name="RunCommand" Kind="InputPin" />
+            <Pin Id="BWAr6z7vI7DMUMgawGcEBX" Name="ProjectorInfo" Kind="OutputPin" />
+            <Pin Id="CEpZr3sPKnMNjpAXNHJENk" Name="Lamp Status" Kind="OutputPin" />
+            <Pin Id="QViKMeS4Le0N8ubnkQnpbZ" Name="Projector Name" Kind="OutputPin" />
+            <Pin Id="H19i8GDMLIdQYAD0xmxhFV" Name="Projector Product Name" Kind="OutputPin" />
+            <Pin Id="B9LxDcbhEgTLIa7y3qykr9" Name="Power Status" Kind="OutputPin" />
+            <Pin Id="CWRgxcHknfSMeQCMMXxIy4" Name="Cover Status" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GKx7PYxDXoKQdO7dzpx1c7" Comment="RunCommand" Bounds="327,449,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PeA6CL6yGteLnKneypoORR" Comment="ProjectorInfo" Bounds="187,558,206,230" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Sa6KJg7wSOxLAw2V8JegQH" Comment="RunCommand" Bounds="590,449,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="360,231,65,19" Id="RCMC8LywxqTO6KeI6pPcMu">
+            <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
+              <Choice Kind="ProcessNode" Name="Connect" />
+            </p:NodeReference>
+            <Pin Id="RPSjVSyDqItP7ER6CmfUwY" Name="Host" Kind="InputPin" />
+            <Pin Id="Sy8FkSdHw0fQH2Tiv30ixt" Name="Port" Kind="InputPin" />
+            <Pin Id="GwyzhMyMDZyO4aVOWb30uu" Name="Passwd" Kind="InputPin" />
+            <Pin Id="POQaS0wZ1E9OSAHZO9qPUi" Name="PJLinkConnection" Kind="OutputPin" />
+            <Pin Id="LtsxdqXlg5xLNF7eP8eLbD" Name="Is Connected" Kind="OutputPin" />
+            <Pin Id="OjeIrXPBMy4PK1788OJR3l" Name="Host Name" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GzQ8wMgPjbnNArRrpXeGzY" Comment="Host" Bounds="362,161,76,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.124">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QdK4wdF75CNN6f1zpfZuUb" Comment="Port" Bounds="392,185,35,15" ShowValueBox="true" isIOBox="true" Value="4352">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FaQRKYmSUI4Nscz94t2iKl" Comment="Passwd" Bounds="422,208,37,15" ShowValueBox="true" isIOBox="true" Value="admin">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="S7a36LDQJ1AO0FfTrFCGZW" Comment="Is Connected" Bounds="392,308,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Pc84Um9PjdjM5ykBsOeLSB" Comment="Host Name" Bounds="422,273,76,15" ShowValueBox="true" isIOBox="true" />
+          <ControlPoint Id="Ok0rXKF3IKlPzuC2YPmHQz" Bounds="362,417" />
+          <ControlPoint Id="Mc8xlF0zMiULsDFex59Ska" Bounds="449,417" />
+          <ControlPoint Id="PIMSJFzgftVQJxo1fLiJrW" Bounds="362,417" />
+          <ControlPoint Id="LFeSosgOifmPxnqjP7MwBc" Bounds="248,417" />
+        </Canvas>
+        <Patch Id="SmpBWfeCxS3LQH5LgUEvye" Name="Create" />
+        <Patch Id="Ff4IdMcInONO5hwOt4vLcP" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="RtelLcTU22FO3INYMVh6lP">
+          <Fragment Id="O340KqT5ZFGMYO6bB8KnWM" Patch="SmpBWfeCxS3LQH5LgUEvye" Enabled="true" />
+          <Fragment Id="M5bUmy2OXgBMVaw0NZ069S" Patch="Ff4IdMcInONO5hwOt4vLcP" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="RKRJSZyj1zvP7qndkFvGCy" Ids="EimBzeV2KlPPyaeSvHEMpN,O1g8bnfBVhzONKbQN4EmSX" />
+        <Link Id="UGctgzxV7wvMJWrUJyt9ft" Ids="BWAr6z7vI7DMUMgawGcEBX,PeA6CL6yGteLnKneypoORR" />
+        <Link Id="VNd0uGwngVnLILmh00eKhq" Ids="Sa6KJg7wSOxLAw2V8JegQH,F2UtCN7HNqKNmilde3PFkk" />
+        <Link Id="O1pCrK6WwU6MyENXloEK8B" Ids="GKx7PYxDXoKQdO7dzpx1c7,Otm4by8ee3uQTVc5hFuDyw" />
+        <Link Id="PGfVcQz7RRMMJVu4bd3FLY" Ids="AVP026X8ghBPzoqOV3gdUD,NxsZWFZut2CO06cWsDEWGP" />
+        <Link Id="PZacneGdeJwNZyRJILNh5u" Ids="GzQ8wMgPjbnNArRrpXeGzY,RPSjVSyDqItP7ER6CmfUwY" />
+        <Link Id="TqPRPqp42K1NcfmEEE3ut5" Ids="QdK4wdF75CNN6f1zpfZuUb,Sy8FkSdHw0fQH2Tiv30ixt" />
+        <Link Id="N0uUPYOE1QOLSCN8eb5KyY" Ids="FaQRKYmSUI4Nscz94t2iKl,GwyzhMyMDZyO4aVOWb30uu" />
+        <Link Id="ItLA9IZdjYGMbCqAVdBtL1" Ids="POQaS0wZ1E9OSAHZO9qPUi,PIMSJFzgftVQJxo1fLiJrW,LFeSosgOifmPxnqjP7MwBc,O6XOP3TeVszLdwEgTiH1nm" />
+        <Link Id="OYALjzUJpPtPj7glgBZDpG" Ids="POQaS0wZ1E9OSAHZO9qPUi,Ok0rXKF3IKlPzuC2YPmHQz,Mc8xlF0zMiULsDFex59Ska,F2SwcNcs0C5LSbEPH3eD0P" />
+        <Link Id="GPn81FEPqh7Ndt0lokPePP" Ids="LtsxdqXlg5xLNF7eP8eLbD,S7a36LDQJ1AO0FfTrFCGZW" />
+        <Link Id="A3PXMRUTbojQZ2iUNe9l9D" Ids="OjeIrXPBMy4PK1788OJR3l,Pc84Um9PjdjM5ykBsOeLSB" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JFDfJWUw2sIMiT7ULH23aw" Location="VL.Skia" Version="2019.1.0-0917-gf8ecea031f" />
+  <DocumentDependency Id="IgzM8F7gekLMUEQryPzGWt" Location="../../VL.PJLink.vl" />
+</Document>

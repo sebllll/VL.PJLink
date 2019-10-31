@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PJLink</name>
+    </assembly>
+    <members>
+        <member name="T:PJLink.TcpClientTimedConnection">
+            <summary>
+            A custom TcpClient class that cancels connection attempts after the specified timeout.
+            </summary>
+        </member>
+        <member name="M:PJLink.TcpClientTimedConnection.Connect(System.String,System.Int32,System.Int32)">
+            <summary>
+            Connects to a remote host.
+            </summary>
+            <param name="hostname">The hostname of the host to connect to.</param>
+            <param name="port">The port of the host to connect to.</param>
+            <param name="connectTimeout">
+            The timeout after which to cancel the connection attempt. 
+            A <see cref="T:System.Net.Sockets.SocketException"/> is thrown if the connection cannot be established in the specified timeout.
+            </param>
+        </member>
+        <member name="M:PJLink.TcpClientTimedConnection.Connect(System.Net.IPAddress,System.Int32,System.Int32)">
+            <summary>
+            Connects to a remote host.
+            </summary>
+            <param name="address">The address of the host to connect to.</param>
+            <param name="port">The port of the host to connect to.</param>
+            <param name="connectTimeout">
+            The timeout after which to cancel the connection attempt. 
+            A <see cref="T:System.Net.Sockets.SocketException"/> is thrown if the connection cannot be established in the specified timeout.
+            </param>
+        </member>
+        <member name="M:PJLink.InputCommand.#ctor(PJLink.InputCommand.InputType,System.Int32)">
+            ports start with 1 !!!
+        </member>
+        <member name="M:PJLink.InputCommand.#ctor">
+            Query
+        </member>
+        <member name="T:PJLink.PJLinkConnection">
+            <summary>
+            Simple class to control networked projectors via the PJLink protocol. 
+            See full spec here: http://pjlink.jbmia.or.jp/english/data/PJLink%20Specifications100.pdf
+            
+            This library was written in one day, so don't expect perfection. Most information must be 
+            fetched from commands after execution (sendCommand). For most common tasks, there are some 
+            shortcuts available in the PJLinkConnectionPJLinkConnection class. 
+            
+            Basic usage: 
+            <code> 
+            // Create connection object, communicating with projector with IP 192.168.1.14
+            // Projector has authentication enabled, password is PJLink (ignored if auth disabled)
+            PJLinkConnection c = new PJLinkConnection("192.168.1.14", "PJLink");
+            
+            //using shortcuts
+            c.turnOn(); 
+            c.turnOff(); 
+            System.Console.WriteLine(c.getProjectorInfo());
+            
+            //using low(er) level commands
+            ErrorStatusCommand esc = new ErrorStatusCommand();
+            if (c.sendCommand(esc) == Command.Response.SUCCESS)            
+                Console.WriteLine(esc.dumpToString());            
+            else
+                Console.WriteLine("Communication Error");
+            </code>     
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._hostName">
+            <summary>
+            hostname or IP (as string, e.g. "192.168.1.12") of the projector
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._port">
+            <summary>
+            PJLink port, default ist 4352 (see Spec)
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._useAuth">
+            <summary>
+            Flag is true, if the projector requires authentication
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._passwd">
+            <summary>
+            Password supplied by user if authentication is enabled
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._pjKey">
+            <summary>
+            Random key returned by projector for MD5 sum generation 
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._client">
+            <summary>
+            The connection client
+            </summary>
+        </member>
+        <member name="F:PJLink.PJLinkConnection._stream">
+            <summary>
+            The Network stream the _client provides
+            </summary>
+        </member>
+        <member name="M:PJLink.PJLinkConnection.sendCommandAsync(PJLink.Command,PJLink.Command.CommandResultHandler)">
+            <summary>
+            Sends a command asynchronously. The specified resultCallback will be called when 
+            the command has executed.
+            </summary>
+        </member>
+        <member name="M:PJLink.PJLinkConnection.turnOn">
+            <summary>
+            Turn on projector. Returns true if projector answered with SUCCESS
+            </summary>
+        </member>
+        <member name="M:PJLink.PJLinkConnection.turnOff">
+            <summary>
+            Turn off projector. Returns true if projector answered with SUCCESS
+            </summary>
+        </member>
+        <member name="M:PJLink.PJLinkConnection.powerQuery">
+            <summary>
+            Check power state of Projector. Returns unknown in case of an error
+            </summary>
+        </member>
+        <member name="M:PJLink.PJLinkConnection.getProjectorInfo">
+            <summary>
+            Return String in the form
+            Manufacturer Product (ProjectorName)
+            or 
+            Manufacturer Product 
+            if no projector name is set. 
+            </summary>
+        </member>
+    </members>
+</doc>
