@@ -623,5 +623,5 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="UnXtvpPNygeO4eiVFTQI33" Location="./lib/PJLink.dll" />
+  <PlatformDependency Id="TVzGDCyra8RN6z3oywX6di" Location="./lib/net472/PJLink.dll" />
 </Document>
