@@ -56,5 +56,5 @@ notifications:
     to:
       - sebl@schnellebuntebilder.de
     subject: 'VL.PJLink Build {{status}}'  # optional
-    message: "{{message}}, {{commitId}}, ..."    # optional
+    message: "{{version}}, @ commit {{commitId}}, has been triggered for build. Exited with status {{status}}"    # optional
     on_build_status_changed: true
