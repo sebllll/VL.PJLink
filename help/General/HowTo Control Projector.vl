@@ -33,7 +33,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="185,486,145,19" Id="RwEXQnwxAhsM4micRP2t5Q">
-            <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
+            <p:NodeReference LastCategoryFullName="IO.PJLink" LastSymbolSource="VL.PJLink.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ProjectorInfo" />
             </p:NodeReference>
@@ -55,7 +55,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="PeA6CL6yGteLnKneypoORR" Comment="ProjectorInfo" Bounds="187,558,206,230" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Sa6KJg7wSOxLAw2V8JegQH" Comment="RunCommand" Bounds="590,447,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Sa6KJg7wSOxLAw2V8JegQH" Comment="RunCommand" Bounds="590,452,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -64,7 +64,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="889,97,65,19" Id="RCMC8LywxqTO6KeI6pPcMu">
-            <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
+            <p:NodeReference LastCategoryFullName="IO.PJLink" LastSymbolSource="VL.PJLink.vl">
               <Choice Kind="ProcessNode" Name="Connect" />
             </p:NodeReference>
             <Pin Id="RPSjVSyDqItP7ER6CmfUwY" Name="Host" Kind="InputPin" />
@@ -104,8 +104,8 @@
             <Pin Id="LXAnwfQMdW4QDNV9ZMyrxS" Name="Status" Kind="OutputPin" />
           </Node>
           <Pad Id="RTY3CMJdhnnMBVonLzTYLX" Comment="CommandResponse" Bounds="831,558,77,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JOmqkXbmQm0OuDmY4sEk4b" Comment="Response" Bounds="766,588,145,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="ApuIfN0ZtD8M3iiz2cgt92" Comment="Send" Bounds="831,447,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="JOmqkXbmQm0OuDmY4sEk4b" Comment="Response" Bounds="766,798,145,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ApuIfN0ZtD8M3iiz2cgt92" Comment="Send" Bounds="831,452,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -119,7 +119,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="1058,486,69,19" Id="Cwpx5pI4UW8ONeavccpvRT">
-            <p:NodeReference LastCategoryFullName="Main.PJLink.Async" LastSymbolSource="VL.PJLink.vl">
+            <p:NodeReference LastCategoryFullName="IO.PJLink.Async" LastSymbolSource="VL.PJLink.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LampStatus" />
             </p:NodeReference>
@@ -130,7 +130,7 @@
             <Pin Id="P2SbSC7F2uGML6C3WeRmnu" Name="Status per Lamp" Kind="OutputPin" />
             <Pin Id="Rd1rEZFG9odM5jhyU6OeDi" Name="Hours Per Lamp" Kind="OutputPin" />
           </Node>
-          <Pad Id="LM8NSdZGFOQQKSLwPmgC9P" Comment="Send" Bounds="1124,425,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="LM8NSdZGFOQQKSLwPmgC9P" Comment="Send" Bounds="1124,452,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -138,12 +138,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ko4KHcuSvMTNQsl4QuYPFY" Comment="Response" Bounds="1061,672,145,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ko4KHcuSvMTNQsl4QuYPFY" Comment="Response" Bounds="1061,798,145,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="LKREqYR8BbDONpqTfMnRpp" Comment="Number Of Lamps" Bounds="1082,627,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="GyMwTqCnRfbNvGerkVh0aj" Comment="Status per Lamp" Bounds="1103,568,77,34" ShowValueBox="true" isIOBox="true" />
           <Pad Id="VHSeyCZvhvNQBUguTdTKSU" Comment="Hours Per Lamp" Bounds="1124,519,35,34" ShowValueBox="true" isIOBox="true" />
           <Pad Id="AMN1yQq6IaHOCVH3NhKG8R" Comment="PJLinkConnection" Bounds="891,233" isIOBox="true" />
-          <Node Bounds="1359,499" Id="Ky9NqJG7ZKJPt1AG3YaK0e">
+          <Node Bounds="1359,499,65,19" Id="Ky9NqJG7ZKJPt1AG3YaK0e">
             <p:NodeReference LastCategoryFullName="Main.PJLink.Async" LastSymbolSource="VL.PJLink.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Input" />
@@ -167,7 +167,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NXVKRRsznBoLNRCMMjiyts" Comment="Send" Bounds="1421,454,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NXVKRRsznBoLNRCMMjiyts" Comment="Send" Bounds="1421,452,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -175,12 +175,62 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JbQfaffGIFZMvwzicBVG41" Comment="Response" Bounds="1361,664,145,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EOCj9615xvVMmj9IPxw4HH" Comment="Input Type" Bounds="1391,622,77,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JydJFk1qh79MtiyAu5zvQi" Comment="Input Port" Bounds="1421,574,35,15" ShowValueBox="true" isIOBox="true" />
-          <Overlay Id="TZryH8XYTZBPnuAPUWVeBg" Name="new Async Pipeline" Bounds="731,354,886,418">
+          <Pad Id="JbQfaffGIFZMvwzicBVG41" Comment="Response" Bounds="1361,798,145,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EOCj9615xvVMmj9IPxw4HH" Comment="Input Type" Bounds="1391,608,77,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JydJFk1qh79MtiyAu5zvQi" Comment="Input Port" Bounds="1421,559,35,15" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="TZryH8XYTZBPnuAPUWVeBg" Name="new Async Pipeline" Bounds="731,354,1427,481">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
+          <Node Bounds="1597,499,52,19" Id="N4aS6Z8YXGTMS1T1RjHKHZ">
+            <p:NodeReference LastCategoryFullName="Main.PJLink.Async" LastSymbolSource="VL.PJLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="PJLink" />
+              <CategoryReference Kind="Category" Name="Async" />
+              <Choice Kind="ProcessAppFlag" Name="AVMute" />
+            </p:NodeReference>
+            <Pin Id="DYfr21XYVL0MV99Kg22Fhd" Name="PJLinkConnection" Kind="InputPin" />
+            <Pin Id="MHYWCYP8xpKO2Ixo42CzrW" Name="AVMuteState" Kind="InputPin" />
+            <Pin Id="Hqpt4RWmHbWMT7ZevVGzTs" Name="Send" Kind="InputPin" />
+            <Pin Id="AZBwvHDsok9PvRW9QbgGK4" Name="Response" Kind="OutputPin" />
+            <Pin Id="ClVXExLN0LgNDlfO8Ec3qQ" Name="Status" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PIvSOr2VEq1PPLR6Aj0cr7" Comment="AVMuteState" Bounds="1623,426,67,15" ShowValueBox="true" isIOBox="true" Value="QUERY">
+            <p:TypeAnnotation LastCategoryFullName="PJLink.AVMuteCommand" LastSymbolSource="PJLink.dll">
+              <Choice Kind="TypeFlag" Name="Mute" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SB37e0nCM6sQdGcVfSV3Ug" Comment="Send" Bounds="1646,452,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SYNRdZu9WN3PhEuA9Gxs0R" Comment="Status" Bounds="1646,559,77,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OwQz9yKNrksMuoI112MNr6" Comment="Response" Bounds="1599,798,145,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1817,499,66,19" Id="CiqFadVsJ9ULUQuAMm9BLm">
+            <p:NodeReference LastCategoryFullName="Main.PJLink.Async" LastSymbolSource="VL.PJLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="PJLink" />
+              <CategoryReference Kind="Category" Name="Async" />
+              <Choice Kind="ProcessAppFlag" Name="ErrorStatus" />
+            </p:NodeReference>
+            <Pin Id="Iv92P98caghNFi0v9Ad6p3" Name="PJLinkConnection" Kind="InputPin" />
+            <Pin Id="AAo2F93aZbaMBkDouyArTj" Name="Send" Kind="InputPin" />
+            <Pin Id="AeAiwIaeC8FOANKfKNoxoW" Name="Response" Kind="OutputPin" />
+            <Pin Id="JCxOjsS9UWwPcvODrsUTdR" Name="ErrorStatus" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VHxyOIL1bzBOSSsWr2fOPI" Comment="Send" Bounds="1880,452,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="M42QlcCELzAPlYDLLV4DgE" Comment="ErrorStatus" Bounds="1880,559,146,150" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JHMIjiXbEyLO9PAL8hn1mz" Comment="Response" Bounds="1819,798,145,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="SmpBWfeCxS3LQH5LgUEvye" Name="Create" />
         <Patch Id="Ff4IdMcInONO5hwOt4vLcP" Name="Update" />
@@ -219,6 +269,15 @@
         <Link Id="P38yGjfTMGlQTwNnGzFHcg" Ids="TtalDI2cYyKLEd1EGlbyTh,JbQfaffGIFZMvwzicBVG41" />
         <Link Id="M2bJoaJdjTyNSLU5OSvuDN" Ids="OA0VwLyiRDYQMaqsrp5SZw,EOCj9615xvVMmj9IPxw4HH" />
         <Link Id="DTuRa4eH7LINBdr1yF76wU" Ids="JgTwd5p5JRXNvOpQOcj4LZ,JydJFk1qh79MtiyAu5zvQi" />
+        <Link Id="IVIbyXwx7kJP2NSc5VeKf4" Ids="AMN1yQq6IaHOCVH3NhKG8R,DYfr21XYVL0MV99Kg22Fhd" />
+        <Link Id="HLyuJ2jQseiPjpc61C6LIQ" Ids="PIvSOr2VEq1PPLR6Aj0cr7,MHYWCYP8xpKO2Ixo42CzrW" />
+        <Link Id="VUfOS9QfosUPbbgaCL8m5c" Ids="SB37e0nCM6sQdGcVfSV3Ug,Hqpt4RWmHbWMT7ZevVGzTs" />
+        <Link Id="VAGtr24vGGtOgIBRrgmhLK" Ids="ClVXExLN0LgNDlfO8Ec3qQ,SYNRdZu9WN3PhEuA9Gxs0R" />
+        <Link Id="GchSQWBnm8XNLgbCmw7Uqf" Ids="AZBwvHDsok9PvRW9QbgGK4,OwQz9yKNrksMuoI112MNr6" />
+        <Link Id="Ptrac6sWRNJMV2toiBgfPS" Ids="AMN1yQq6IaHOCVH3NhKG8R,Iv92P98caghNFi0v9Ad6p3" />
+        <Link Id="VNOw2AMWMvgPgmAoTiPkXU" Ids="VHxyOIL1bzBOSSsWr2fOPI,AAo2F93aZbaMBkDouyArTj" />
+        <Link Id="HDMdlc1A8b3NLuOCr7mAhP" Ids="JCxOjsS9UWwPcvODrsUTdR,M42QlcCELzAPlYDLLV4DgE" />
+        <Link Id="HY4lhTtfMgdQMoDgMo2HGk" Ids="AeAiwIaeC8FOANKfKNoxoW,JHMIjiXbEyLO9PAL8hn1mz" />
       </Patch>
     </Node>
   </Patch>
