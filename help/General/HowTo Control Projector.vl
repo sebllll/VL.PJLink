@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="InPzrEwTjOrNg5I8asUNar">
         <Canvas Id="LgW2CUIPrS8MjLlsqvoIVQ" CanvasType="Group">
-          <Node Bounds="508,487,85,19" Id="VZocPkZLjymM26ulyCdwBS">
+          <Node Bounds="508,486,85,19" Id="VZocPkZLjymM26ulyCdwBS">
             <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="PJLink" NeedsToBeDirectParent="true" />
@@ -46,7 +46,7 @@
             <Pin Id="B9LxDcbhEgTLIa7y3qykr9" Name="Power Status" Kind="OutputPin" />
             <Pin Id="CWRgxcHknfSMeQCMMXxIy4" Name="Cover Status" Kind="OutputPin" />
           </Node>
-          <Pad Id="GKx7PYxDXoKQdO7dzpx1c7" Comment="RunCommand" Bounds="327,449,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="GKx7PYxDXoKQdO7dzpx1c7" Comment="RunCommand" Bounds="327,447,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -55,7 +55,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="PeA6CL6yGteLnKneypoORR" Comment="ProjectorInfo" Bounds="187,558,206,230" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Sa6KJg7wSOxLAw2V8JegQH" Comment="RunCommand" Bounds="590,449,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Sa6KJg7wSOxLAw2V8JegQH" Comment="RunCommand" Bounds="590,447,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -95,6 +95,34 @@
           <ControlPoint Id="Mc8xlF0zMiULsDFex59Ska" Bounds="449,417" />
           <ControlPoint Id="PIMSJFzgftVQJxo1fLiJrW" Bounds="362,417" />
           <ControlPoint Id="LFeSosgOifmPxnqjP7MwBc" Bounds="248,417" />
+          <Node Bounds="764,486,70,19" Id="HM8ZkBMtwLtMXYuIOtYBE0">
+            <p:NodeReference LastCategoryFullName="Main.PJLink" LastSymbolSource="VL.PJLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PowerAsync" />
+            </p:NodeReference>
+            <Pin Id="JH9fLjeAZ2SNW8QMn3opnn" Name="PJLinkConnection" Kind="InputPin" />
+            <Pin Id="EruAGp7ADZcMlrx4HrW6GB" Name="PowerState" Kind="InputPin" />
+            <Pin Id="LOpkTodDU75QLmdxf3agtg" Name="Send" Kind="ApplyPin" />
+            <Pin Id="AF2ETRh19uuQUWxaG3GS51" Name="Response" Kind="OutputPin" />
+            <Pin Id="LXAnwfQMdW4QDNV9ZMyrxS" Name="Status" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RTY3CMJdhnnMBVonLzTYLX" Comment="CommandResponse" Bounds="831,558,77,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JOmqkXbmQm0OuDmY4sEk4b" Comment="Response" Bounds="766,588,145,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ApuIfN0ZtD8M3iiz2cgt92" Comment="Send" Bounds="831,447,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CtYappgchSpPvmHEI7Xf3n" Comment="PowerState" Bounds="798,417,59,15" ShowValueBox="true" isIOBox="true" Value="QUERY">
+            <p:TypeAnnotation LastCategoryFullName="PJLink.PowerCommand" LastSymbolSource="PJLink.dll">
+              <Choice Kind="TypeFlag" Name="Power" />
+            </p:TypeAnnotation>
+          </Pad>
+          <ControlPoint Id="LXg5TJtUiiwPzoxZ5H68De" Bounds="697,417" />
+          <ControlPoint Id="DLrIkXtDfEANQcAMR8J4D5" Bounds="362,417" />
         </Canvas>
         <Patch Id="SmpBWfeCxS3LQH5LgUEvye" Name="Create" />
         <Patch Id="Ff4IdMcInONO5hwOt4vLcP" Name="Update" />
@@ -114,6 +142,11 @@
         <Link Id="OYALjzUJpPtPj7glgBZDpG" Ids="POQaS0wZ1E9OSAHZO9qPUi,Ok0rXKF3IKlPzuC2YPmHQz,Mc8xlF0zMiULsDFex59Ska,F2SwcNcs0C5LSbEPH3eD0P" />
         <Link Id="GPn81FEPqh7Ndt0lokPePP" Ids="LtsxdqXlg5xLNF7eP8eLbD,S7a36LDQJ1AO0FfTrFCGZW" />
         <Link Id="A3PXMRUTbojQZ2iUNe9l9D" Ids="OjeIrXPBMy4PK1788OJR3l,Pc84Um9PjdjM5ykBsOeLSB" />
+        <Link Id="HQtFoYXNRGPO97i5V8OUKQ" Ids="POQaS0wZ1E9OSAHZO9qPUi,DLrIkXtDfEANQcAMR8J4D5,LXg5TJtUiiwPzoxZ5H68De,JH9fLjeAZ2SNW8QMn3opnn" />
+        <Link Id="AG22hi4tui9ME0qMCK4aaT" Ids="LXAnwfQMdW4QDNV9ZMyrxS,RTY3CMJdhnnMBVonLzTYLX" />
+        <Link Id="HyZCNGbRUmXPj6yC64XeA5" Ids="AF2ETRh19uuQUWxaG3GS51,JOmqkXbmQm0OuDmY4sEk4b" />
+        <Link Id="JlIaF0GBfHDNwGvYJM5Xtk" Ids="ApuIfN0ZtD8M3iiz2cgt92,LOpkTodDU75QLmdxf3agtg" />
+        <Link Id="TqlbUkxT2k5MxyhxahWJOK" Ids="CtYappgchSpPvmHEI7Xf3n,EruAGp7ADZcMlrx4HrW6GB" />
       </Patch>
     </Node>
   </Patch>

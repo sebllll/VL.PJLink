@@ -31,6 +31,18 @@
             A <see cref="T:System.Net.Sockets.SocketException"/> is thrown if the connection cannot be established in the specified timeout.
             </param>
         </member>
+        <member name="T:PJLink.Command">
+            <summary>
+            base class for Commands
+            </summary>
+        </member>
+        <member name="T:PJLink.Command.CommandResultHandler">
+            <summary>
+            Callback used by SendCommandAsync
+            </summary>
+            <param name="sender">The Command sent to the projector</param>
+            <param name="response">The response from the projector</param>
+        </member>
         <member name="M:PJLink.InputCommand.#ctor(PJLink.InputCommand.InputType,System.Int32)">
             ports start with 1 !!!
         </member>
@@ -106,6 +118,13 @@
             Sends a command asynchronously. The specified resultCallback will be called when 
             the command has executed.
             </summary>
+        </member>
+        <member name="M:PJLink.PJLinkConnection.sendCommandAsync(PJLink.Command)">
+            <summary>
+            Sends a command asynchronously. Uses standard Eventpattern. OnResponse will 
+            be raised when the command has executed
+            </summary>
+            <param name="cmd"></param>
         </member>
         <member name="M:PJLink.PJLinkConnection.turnOn">
             <summary>
