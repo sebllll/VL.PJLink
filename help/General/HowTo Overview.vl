@@ -90,7 +90,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CtYappgchSpPvmHEI7Xf3n" Comment="PowerState" Bounds="573,429,59,15" ShowValueBox="true" isIOBox="true" Value="QUERY">
+          <Pad Id="CtYappgchSpPvmHEI7Xf3n" Comment="PowerState" Bounds="573,384,59,15" ShowValueBox="true" isIOBox="true" Value="QUERY">
             <p:TypeAnnotation LastCategoryFullName="PJLink.PowerCommand" LastSymbolSource="PJLink.dll">
               <Choice Kind="TypeFlag" Name="Power" />
             </p:TypeAnnotation>
