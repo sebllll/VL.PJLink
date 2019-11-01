@@ -2,17 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.PJLink</id>
-    <!-- <version>$version$</version> -->
     <version>0.0.1</version>
     <title>VL.PJLink</title>
     <authors>vvvv, sebl</authors>
-    <owners>vvvv</owners>
+    <owners>vvvv, sebl</owners>
     <projectUrl>http://vvvv.org</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Set of Nodes to connect and Control Projectors via PJLink Protocol in VL</summary>
+    <summary>Set of Nodes to connect and control projectors via PJLink protocol in VL</summary>
     <description>PJLink Protocol in VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, vvvv, PJLink, projector, network</tags>
+    <tags>VL, vvvv, PJLink, projector, network, protocol</tags>
     <license type="expression">BSD-3-Clause</license>
     <repository type="git" url="https://github.com/sebllll/VL.PJLink" />
   </metadata>
