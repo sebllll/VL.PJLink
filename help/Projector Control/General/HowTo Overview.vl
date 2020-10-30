@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GDTsBmXXPT0MRz6hP0j1Qm" LanguageVersion="2019.1.0-0917-gf8ecea031f" Version="0.128">
-  <NugetDependency Id="RxcujbNLbhEPEZLWZzicKQ" Location="VL.CoreLib" Version="2019.1.0-917" />
+<Document xmlns:p="property" Id="GDTsBmXXPT0MRz6hP0j1Qm" LanguageVersion="2020.3.0.57" Version="0.128">
+  <NugetDependency Id="RxcujbNLbhEPEZLWZzicKQ" Location="VL.CoreLib" Version="2020.3.0-0057-g81c1e374d5" />
   <Patch Id="I1jejykHNjZMoI0oLbGLO2">
     <Canvas Id="CpfUhgxuWUzMYKFT9PuFvu" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -327,6 +327,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JFDfJWUw2sIMiT7ULH23aw" Location="VL.Skia" Version="2019.1.0-0917-gf8ecea031f" />
-  <DocumentDependency Id="IgzM8F7gekLMUEQryPzGWt" Location="../../VL.PJLink.vl" />
+  <NugetDependency Id="JFDfJWUw2sIMiT7ULH23aw" Location="VL.Skia" Version="2020.3.0-0057-g81c1e374d5" />
+  <DocumentDependency Id="AGsjj2yEzcyO4D7vNDJVKD" Location="../../../VL.PJLink.vl" />
 </Document>
