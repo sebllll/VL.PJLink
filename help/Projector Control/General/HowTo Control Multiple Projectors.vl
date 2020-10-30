@@ -100,12 +100,12 @@
             </p:Value>
           </Pad>
           <Pad Id="V6JVbh3NF6ALDOeMadZgQl" SlotId="Lx2eGKx5a3NMTWHLE9WZX7" Bounds="249,499" />
-          <Pad Id="SvTfLPZ04AeOuW0AM38RvV" Comment="Port" Bounds="323,254,35,15" ShowValueBox="true" isIOBox="true" Value="4352">
+          <Pad Id="SvTfLPZ04AeOuW0AM38RvV" Comment="Port" Bounds="323,253,35,15" ShowValueBox="true" isIOBox="true" Value="4352">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IgQ57QV5v43P7992Tl8gl0" Bounds="318,273,68,9" ShowValueBox="true" isIOBox="true" Value="(all on the same port)">
+          <Pad Id="IgQ57QV5v43P7992Tl8gl0" Bounds="318,272,68,9" ShowValueBox="true" isIOBox="true" Value="(all on the same port)">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
