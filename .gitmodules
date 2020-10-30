@@ -1,0 +1,4 @@
+[submodule "src/pjlink-sharp"]
+	path = src/pjlink-sharp
+	url = git@github.com:sebllll/pjlink-sharp.git
+	branch = master
