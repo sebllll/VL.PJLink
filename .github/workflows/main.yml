@@ -2,13 +2,26 @@
 
 name: push_nuget
 
-# on push on master
+# on manual click
 on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - README.md
+  workflow_dispatch:
+    inputs:
+      buildnumberMaj:
+        description: 'Major Version'     
+        required: true
+        default: '0'
+      buildnumber:
+        description: 'Version'     
+        required: true
+        default: '1'                  
+      buildnumberMin:
+        description: 'Minor Version'     
+        required: true
+        default: '0'
+      deploy:
+          description: 'really push to nuget.org'
+          required: false
+          type: boolean
 
 jobs:
   build:
@@ -17,15 +30,27 @@ jobs:
     - name: Git Checkout
       uses: actions/checkout@master
 
+    - name: deploy
+      if: ${{ github.event.inputs.deploy == 'true' }}
+      run: echo "actually deploying..."
+
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.0
 
     - name: Setup Nuget.exe
-      uses: nuget/setup-nuget@v1
+      if: ${{ github.event.inputs.deploy == 'true' }}
+      uses: nuget/setup-nuget@v2.0.0
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.29
+      if: ${{ github.event.inputs.deploy == 'true' }}
+      uses: vvvv/PublishVLNuget@1.0.43
       with:
         csproj: src\pjlink-sharp\PJLink\PJLink.csproj
+        
         nuspec: deployment\VL.PJLink.nuspec
+        version: ${{ github.event.inputs.buildnumberMaj }}.${{ github.event.inputs.buildnumber }}.${{ github.event.inputs.buildnumberMin }}
+
+        icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
+        icon-dst: ./deployment/nugeticon.png
+
         nuget-key: ${{ secrets.NUGET_KEY }}
