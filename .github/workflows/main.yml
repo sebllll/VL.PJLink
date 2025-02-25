@@ -34,9 +34,6 @@ jobs:
       if: ${{ github.event.inputs.deploy == 'true' }}
       run: echo "actually deploying..."
 
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.0
-
     - name: Setup Nuget.exe
       if: ${{ github.event.inputs.deploy == 'true' }}
       uses: nuget/setup-nuget@v2.0.0
@@ -45,8 +42,7 @@ jobs:
       if: ${{ github.event.inputs.deploy == 'true' }}
       uses: vvvv/PublishVLNuget@1.0.43
       with:
-        csproj: src\pjlink-sharp\PJLink\PJLink.csproj
-        
+
         nuspec: deployment\VL.PJLink.nuspec
         version: ${{ github.event.inputs.buildnumberMaj }}.${{ github.event.inputs.buildnumber }}.${{ github.event.inputs.buildnumberMin }}
 
