@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GDTsBmXXPT0MRz6hP0j1Qm" LanguageVersion="2024.6.5" Version="0.128">
-  <NugetDependency Id="RxcujbNLbhEPEZLWZzicKQ" Location="VL.CoreLib" Version="2024.6.5" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GDTsBmXXPT0MRz6hP0j1Qm" LanguageVersion="2025.7.0-0170-gf0ee7a321e" Version="0.128">
+  <NugetDependency Id="RxcujbNLbhEPEZLWZzicKQ" Location="VL.CoreLib" Version="2025.7.0-0170-gf0ee7a321e" />
   <Patch Id="I1jejykHNjZMoI0oLbGLO2">
     <Canvas Id="CpfUhgxuWUzMYKFT9PuFvu" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -53,7 +53,7 @@
             <Pin Id="LtsxdqXlg5xLNF7eP8eLbD" Name="Is Connected" Kind="OutputPin" />
             <Pin Id="OjeIrXPBMy4PK1788OJR3l" Name="Host Name" Kind="OutputPin" />
           </Node>
-          <Pad Id="GzQ8wMgPjbnNArRrpXeGzY" Comment="Host" Bounds="906,-93,76,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.124">
+          <Pad Id="GzQ8wMgPjbnNArRrpXeGzY" Comment="Host" Bounds="906,-93,76,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.113">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -63,7 +63,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="FaQRKYmSUI4Nscz94t2iKl" Comment="Passwd" Bounds="966,-46,37,15" ShowValueBox="true" isIOBox="true" Value="admin">
+          <Pad Id="FaQRKYmSUI4Nscz94t2iKl" Comment="Passwd" Bounds="966,-46,37,15" ShowValueBox="true" isIOBox="true" Value="0000">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -333,10 +333,11 @@
         <Link Id="JlIaF0GBfHDNwGvYJM5Xtk" Ids="ApuIfN0ZtD8M3iiz2cgt92,LOpkTodDU75QLmdxf3agtg" />
         <Link Id="TqlbUkxT2k5MxyhxahWJOK" Ids="CtYappgchSpPvmHEI7Xf3n,EruAGp7ADZcMlrx4HrW6GB" />
         <Link Id="DDgmrWvRVjXQQjYFNAAskj" Ids="NXVKRRsznBoLNRCMMjiyts,S0eqP2HoTTrMUT8dtVpb19" />
+        <Link Id="CwzspEKdVrLOvTlgEJJX67" Ids="AMN1yQq6IaHOCVH3NhKG8R,O6XOP3TeVszLdwEgTiH1nm" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JFDfJWUw2sIMiT7ULH23aw" Location="VL.Skia" Version="2024.6.5" />
+  <NugetDependency Id="JFDfJWUw2sIMiT7ULH23aw" Location="VL.Skia" Version="2025.7.0-0170-gf0ee7a321e" />
   <DocumentDependency Id="AGsjj2yEzcyO4D7vNDJVKD" Location="../../../VL.PJLink.vl" />
   <PlatformDependency Id="PGAOU7D5AVnMhp7Y1DggKe" Location="../../../lib/net8.0/PJLink.dll" />
 </Document>
